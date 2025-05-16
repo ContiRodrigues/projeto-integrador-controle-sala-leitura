@@ -1,0 +1,109 @@
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <div class="space"></div>
+    <a class="navbar-brand">
+      <h1>Sala de Leitura - E.E. Adoniran Barbosa</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Opções de Navegação</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/" target="_blank">
+              <i class="bi bi-house-door"></i>
+              Ir para o Início
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro">
+              <i class="bi bi-search"></i>
+              Cadastros
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="alterar">
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              Alterar / Remover
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">
+              <i class="bi bi-person-circle"></i>
+              Logout(Sair)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <section class="text-header-cad">
+    <h3>Alterar ou Remover Cadastros</h3>
+  </section>
+</header>
+
+<main>
+  <section class="img-books">
+    <img src="../imagens/image2.jpg" alt="livros">
+  </section>
+  <section class="text-cadastro">
+    <div>
+      <section class="registers">
+        <div class="register-books">
+          <a href="alterar-exemplar">
+            <span>
+              <p>Alterar / Remover Livros</p>
+            </span>
+          </a>
+          <a href="alterar-prateleira">
+            <span>
+              <p>Alterar / Remover Prateleiras</p>
+            </span>
+          </a>          
+        </div>
+
+        <div class="register-usu">
+          <a href="alterar-leitor">
+            <span>
+              <p>Alterar / Remover Leitores</p>
+            </span>
+          </a>
+          <a href="alterar-administrador">
+            <span>
+              <p>Alterar / Remover Administradores</p>
+            </span>
+          </a>
+        </div>
+
+        <div class="register-books">
+          <a href="alterar-emprestimo">
+            <span id="emprestar">
+              <p>Alterar / Remover Empréstimos</p>
+            </span>
+          </a>
+          <a href="alterar-devolucao">
+            <span id="devolver">
+              <p>Alterar / Remover Devoluções</p>
+            </span>
+          </a>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section class="img-books-2">
+    <img src="../imagens/image2.jpg" alt="livros">
+  </section>
+</main>
+
+<footer>
+  <p>2025 - Projeto Integrador - Desenvolvido por alunos do Curso de TI da UNIVESP</p>
+</footer>

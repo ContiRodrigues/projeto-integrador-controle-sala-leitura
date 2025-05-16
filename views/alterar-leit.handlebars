@@ -1,0 +1,100 @@
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <div class="space"></div>
+    <a class="navbar-brand">
+      <h1>Sala de Leitura - E.E. Adoniran Barbosa</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Opções de Navegação</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/" target="_blank">
+              <i class="bi bi-house-door"></i>
+              Ir para o Início
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="cadastro">
+              <i class="bi bi-search"></i>
+              Voltar aos Cadastros
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="alterar">
+              <i class="bi bi-file-earmark-arrow-down"></i>
+              Alterar / Remover
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="login">
+              <i class="bi bi-person-circle"></i>
+              Logout(Sair)
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="text-header-cad">
+    <h3>Alterar/Remover Leitor</h3>
+  </div>
+</header>
+
+<main>
+  <section class="img-books">
+    <img src="../imagens/image2.jpg" alt="livros">
+  </section>
+  <section class="alterar-adm">
+    <form id="register" action="/alterar-leit" method="POST" novalidate enctype="multipart/form-data">
+      <input type="search" placeholder="Código/RA do Leitor(a)" name="codleitor">      
+      <div>
+        <input class="btn btn-primary" type="submit" value="Buscar">
+        <a class="btn btn-secondary" href="/alterar">Cancelar</a>
+      </div>
+    </form>
+  </section>
+  {{!-- Formulário Alterações --}}
+  <section class="alt-view-adm">
+    <div class="card registers">
+      <div class="alt-exem-cont">
+        {{#each leitor}}
+          <div class="alt-exem-div">
+            <p>Código: {{codleitor}}</p>
+          </div>
+          <div class="alt-exem-div">
+            <p>Nome: {{nomeleitor}}</p>
+          </div>
+          <div class="alt-exem-div">
+            <p>Série: {{serie}}</p>
+            <p>Cargo: {{cargo}}</p>
+          </div>
+          <div class="alt-exem-div">
+            <p>Status: {{status}}</p>
+          </div>
+          <div class="alt-exem-div">
+            <p>Observações: {{observacao}}</p>
+          </div>
+          <div class="alt-exem-div">
+            <a href="/altremov-leit/{{codleitor}}" class="btn btn-warning">Alterar</a>
+            <a href="/remove-leit/{{codleitor}}" class="btn btn-danger">Remover</a>
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>2025 - Projeto Integrador - Desenvolvido por alunos do Curso de TI da UNIVESP</p>
+</footer>

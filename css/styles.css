@@ -1,0 +1,608 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-color: #e3e3e3;
+}
+
+header {
+  height: 90px;
+}
+
+main {
+  display: flex;
+  height: 400px;
+  margin-left: 20px;
+  padding: 20px 20px;
+}
+
+main p {
+  font-size: 1.2rem;
+}
+
+.img-books img {
+  width: 260px;
+  height: 470px;
+}
+
+#img-door img {
+  width: 350px;
+  border-radius: 5%;
+  margin-left: 15px;
+}
+
+/* Nav */
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.container-fluid {
+  text-align: center;
+  background-color: #d4d4d4;
+}
+
+.container-fluid a h1, h2 {
+  text-align: center;
+  font-family: 'Outfit', Tahoma, sans-serif;
+  color: #727171;
+}
+
+/* Botão Menu Hamburguer */
+.navbar-toggler {
+  margin-right: 25px;
+}
+
+.navbar-toggler:hover {
+  background-color: #727171;
+}
+
+/* Nav - Menu Lateral */
+.offcanvas-header {
+  background-color: #989898;
+  font-size: 1.5rem;
+}
+
+.offcanvas-body {
+  background-color: #366aaa;
+}
+
+.offcanvas-body ul {
+  align-items: flex-start;
+  height: 330px;
+}
+
+.nav-item a {
+  font-size: 1.5rem;
+  padding: 20px;
+  color: #fff;
+}
+
+.nav-item i {
+  padding: 7px;
+}
+
+/*Página Inicial*/
+.text-home {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 20px;
+}
+
+.text-home ul {
+  list-style: none;
+  font-size: 1.2rem;
+  padding-right: 20px;
+}
+
+.text-home li {
+  padding-bottom: 8px;
+}
+
+/*Página Sobre nós*/
+.text-about {
+  padding-left: 20px;
+}
+
+.text-about h3 {
+  font-weight: bold;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding: 10px;
+}
+
+.bi-telephone-inbound {
+  padding-right: 10px;
+}
+
+.bi-envelope-at {
+  padding-right: 10px;
+}
+
+/*Página Pesquisar*/
+.search-page {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+#right-img-search img {
+  width: 280px;
+  margin-top: 10px;
+  margin-left: 40px;
+  border-radius: 10px;
+}
+
+.text-search {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.search-label {
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 30px;
+}
+
+#searchbar {
+  width: 550px;
+  height: 45px;
+  margin-top: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
+
+#searchbar:hover {
+  background-color: #d4d4d4;
+}
+
+#search-icon {
+  color: #727171;
+  font-size: 1.4rem;
+}
+
+.text-search form .btn {
+  margin-top: -7px;
+  border: 1px solid #989898;
+}
+
+.text-search h4 {
+  font-weight: bold;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.text-search .container {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  padding-left: 15px;
+  margin-top: 20px;
+  margin-bottom: 70px;
+  background-color: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 10px;
+}
+
+.container .img-lista img {
+  width: 80px;
+  height: 100px;
+  padding-top: 7px;
+}
+
+.container .container-legenda p {
+  font-size: 14px;
+  font-weight: bold;
+  border-bottom: 1px solid #727171;
+  border-top: 1px solid #727171;
+}
+
+/*Página Login*/
+.text-login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-login form {
+  width: 400px;
+  height: 180px;
+  background: transparent;
+  border: 2px solid #727171;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 60px;
+  padding: 10px;
+}
+
+.text-login h2 {
+  color: #727171;
+  font-weight: bold;
+  text-align: center;
+}
+
+.text-login .icon {
+  font-size: 1.5rem;
+  color: #727171;
+  padding-left: 5px;
+}
+
+#username {
+  width: 300px;
+  margin-top: 15px;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding-left: 8px;
+  font-size: 1.3rem;
+}
+
+#password {
+  width: 300px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding-left: 8px;
+  font-size: 1.3rem;
+}
+
+#username:hover, #password:hover, #button-login:hover {
+  background-color: #d4d4d4;
+}
+
+#button-login {
+  background-color: #989898;
+  border-radius: 8px;
+  margin-top: 10px;
+  margin-left: 20px;
+  padding: 4px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #303030;
+}
+
+#img-inlinebooks img {
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 80px;
+  border-radius: 20px;
+}
+
+/*Footer da página*/
+footer {
+  position:fixed;
+  left: 370px;
+  margin-top: 10px;
+  bottom: 0;
+}
+
+/*Página Cadastros*/
+#cad-height ul {
+  height: 300px;
+}
+
+.registers {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.text-cadastro h3 {
+  text-align: center;
+}
+
+.register-books {
+  width: 500px;
+  position: relative;
+  left: 50px;
+  background-color: #bebdbd;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.register-books p {
+  font-size: 1.4rem;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: #5b9be9;
+  margin: 10px;
+  text-align: center;
+}
+
+.register-books p:hover {
+  cursor: pointer;
+  background-color: #9bc2f0;
+}
+
+.register-books a {
+  text-decoration: none;
+  color: #000;
+}
+
+.register-usu {
+  position: relative;
+  left: 50px;
+  background-color: #5b9be9;
+  border-radius: 10px;
+  margin: 10px;
+  margin-bottom: 20px;
+  padding: 8px;
+}
+
+.register-usu p {
+  font-size: 1.4rem;
+  border: 1px solid;
+  border-radius: 8px;
+  background-color: #bebdbd;
+  margin: 10px;
+  text-align: center;
+}
+
+.register-usu p:hover {
+  cursor: pointer;
+  background-color: #d4d4d4;
+}
+
+.register-usu a {
+  text-decoration: none;
+  color: #000;
+}
+
+.img-books-2 img {
+  width: 260px;
+  height: 470px;
+  margin-left: 120px;
+}
+
+/* Páginas dos Cadastros */
+.text-header-cad {
+  position: relative;
+}
+
+.text-header-cad h3 {
+  position: absolute;
+  top: -10px;
+  left: 450px;
+  margin-top: 80px;
+  font-weight: bold;
+}
+
+.registers-cads {
+  margin-left: 45px;
+}
+
+#register {
+  display: flex;
+  flex-direction: column;
+}
+
+#register input {
+  height: 35px;
+  font-size: 1.3rem;
+  padding-left: 3px;
+}
+
+#register div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+#register-nome input {
+  width: 600px;
+}
+
+#register-obs input {
+  width: 550px;
+}
+
+.width-campo input {
+  width: 180px;
+}
+
+.btn-primary, .btn-secondary {
+  text-align: center;
+  padding: 0;
+  padding-right: 3px;
+}
+
+.btn-secondary {
+  font-size: 1.3rem;
+}
+
+#register .upload-file input {
+  font-size: 1rem;
+}
+
+.select-status select {
+  height: 35px;
+}
+
+.select-serie select {
+  height: 35px;
+}
+
+.width-campo select {
+  height: 35px;
+}
+
+/* Páginas de Alterações Prateleiras */
+.alterar {
+  margin-top: 10px;
+  margin-left: 65px;
+  padding: 10px;
+}
+
+.alterar input, a {
+  margin-bottom: 10px;
+}
+
+.alt-view {
+  position: relative;
+  top: 150px;
+  right: 330px;
+}
+
+.alt-view form {
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Página Alterações Administradores */
+.alterar-adm {
+  margin-top: 5px;
+  margin-left: 65px;
+  padding: 10px;
+}
+
+.alt-view-adm {
+  position: relative;
+  top: 95px;
+  right: 330px;
+}
+
+.alt-view-adm form {
+  padding: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Página Alteração Exemplar */
+.alterar-exem {
+  margin-left: 60px;
+}
+
+.alterar-exem #register input {
+  font-size: 1rem;
+  height: 27px;
+}
+
+.alterar-exem #register a {
+  font-size: 1rem;
+  padding: 1px;
+}
+
+.alterar-exem #register .exem-font {
+  font-size: 1rem;
+}
+
+.alt-view-exem {
+  position: relative;
+  top: 75px;
+  right: 250px;
+}
+
+.alt-view-exem form {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#register .width-campo-exem p {
+  margin-bottom: 5px;
+}
+
+#register #register-nome p {
+  margin-bottom: 5px;
+}
+
+.alt-view-exem #register input {
+  font-size: 1rem;
+  height: 27px;
+}
+
+.alt-view-exem #register select {
+  font-size: 1rem;
+  height: 27px;
+}
+
+.alt-view-exem #register p {
+  font-size: .9rem;
+}
+
+.alt-view-exem #register input {
+  font-size: .9rem;
+}
+
+.alt-view-exem a {
+  font-size: 1rem;
+  padding: 1px;
+}
+
+/* Alt/Remov Prateleira */
+.alterar-prat {
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+
+.alterar-prat .card #register {
+  padding: 10px;
+}
+
+/* Alt/Remov Exemplar */
+.card .alt-exem-cont {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.alt-exem-div {
+  display: flex;
+  flex-direction: row;
+  padding-left: 15px;
+  padding-right: 15px;
+  gap: 20px;
+}
+
+.alt-view-prat .alt-exem-cont #register {
+  padding: 10px;
+}
+
+.alt-view-prat .alt-exem-cont #register input {
+  font-size: 1rem;
+}
+
+.alt-view-prat .alt-exem-cont #register p {
+  font-size: 1rem;
+}
+
+/* Alt/Remov Empréstimos */
+.alt-view-empr {
+  position: relative;
+  top: 80px;
+  right: 220px;
+  border: 1px solid #bebdbd;
+  height: 300px;
+  background-color: #fff;
+}
+
+.alterar-empr {
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+
+.alterar-empr .card #register {
+  padding: 10px;
+}

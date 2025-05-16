@@ -1,0 +1,78 @@
+<nav class="navbar bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <div class="space"></div>
+    <a class="navbar-brand">
+      <h1>Sala de Leitura - E.E. Adoniran Barbosa</h1>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h3 class="offcanvas-title" id="offcanvasNavbarLabel">Opções de Navegação</h3>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="/">
+              <i class="bi bi-house-door"></i>
+              Página Inicial
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="sobre">
+              <i class="bi bi-columns-gap"></i>
+              Sobre nós
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="pesquisar">
+              <i class="bi bi-search"></i>
+              Pesquisar Livros
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="login">
+              <i class="bi bi-person-circle"></i>
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<header>
+  
+</header>
+
+<main>
+  <section class="img-books">
+    <img src="../imagens/image2.jpg" alt="livros">
+  </section>
+  <section class="text-login">
+    <div>
+      <h2>Login</h2>
+      <form action="/login" method="post">
+        <input id="username" type="text" name="codfunc" placeholder="Usuário" required>
+        <span class="icon"><i class="bi bi-person-circle"></i></span>
+        <br>
+        <input id="password" type="password" name="senha" placeholder="Senha" required>
+        <span class="icon"><i class="bi bi-lock-fill"></i></span>
+        <br>
+        <input type="submit" name="entrar" value="Entrar" id="button-login">
+      </form>
+    </div>
+
+    <div id="img-inlinebooks">
+      <img src="./imagens/image4.jpg" alt="entra da sala de leitura">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>2025 - Projeto Integrador - Desenvolvido por alunos do Curso de TI da UNIVESP</p>
+</footer>
