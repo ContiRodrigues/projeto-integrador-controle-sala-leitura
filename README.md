@@ -26,14 +26,14 @@ Obs.: Os arquivos de exemplos, testes e cadastros do <b>Banco de dados</b>, no c
 
 ## Os alunos (<i>devs</i>) participantes do projeto 👀
 
-- Alexandre Rodrigues de Sousa, RA 2212891 (Polo XXX)
-- Amanda Rocha Evaristo, RA 2101158 (Polo XXX)
-- Ana Carolina Rodrigues Vieira, RA 2233200 (Polo XXX)
-- Danilo de Freitas Ramires, RA 2105830 (Polo Ipeúna)
-- Jamile da Silva Pereira, RA 2207126 (Polo Conchal)
-- Luís Fernando Conti Rodrigues, RA 2223305 (Polo Indaiatuba)
-- Talis Eduardo da Silva e Toledo, RA 2214241 (Polo Indaiatuba)
-- Wainer de Paula Dias, RA 2222958 (Polo XXX)
+- Alexandre Rodrigues de Sousa, RA 2212891
+- Amanda Rocha Evaristo, RA 2101158
+- Ana Carolina Rodrigues Vieira, RA 2233200
+- Danilo de Freitas Ramires, RA 2105830
+- Jamile da Silva Pereira, RA 2207126
+- Luís Fernando Conti Rodrigues, RA 2223305
+- Talis Eduardo da Silva e Toledo, RA 2214241
+- Wainer de Paula Dias, RA 2222958
 
 Polos Americana, Campinas, Conchal, Holambra, Indaiatuba, Valinhos 
 
